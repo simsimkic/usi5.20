@@ -1,0 +1,48 @@
+﻿<Window x:Class="ZdravoCorp.Gui.Doctor.View.DoctorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoCorp.Gui.Doctor.View"
+        mc:Ignorable="d"
+        Title="Doctor" Height="500" Width="900" Closing="doctorWindow_Closing">
+    <Grid x:Name="doctorWindow">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="81*"/>
+            <ColumnDefinition Width="206*"/>
+            <ColumnDefinition Width="614*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl Grid.ColumnSpan="3">
+            <TabItem Header="Appointments" FontSize="18">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="284*"/>
+                        <ColumnDefinition Width="575*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="editAppointmentBtn" Content ="Edit" Grid.Column="2" HorizontalAlignment="Left" Height="40" Margin="379,313,0,0" VerticalAlignment="Top" Width="68" Background="#FF96FF72" FontWeight="Bold" Click="editAppointmentBtn_Click"/>
+                    <Button x:Name="medicalCardBtn" Content =" Medical card
+                            " Grid.Column="2" HorizontalAlignment="Left" Height="40" Margin="106,313,0,0" VerticalAlignment="Top" Width="122" Background="#FFFFF08C" FontWeight="Bold" Click="medicalCardBtn_Click"/>
+                    <DatePicker x:Name="appointmentDate" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="40" Margin="18,313,0,0" VerticalAlignment="Top" Width="252" SelectedDateChanged="appointmentDate_SelectedDateChanged"/>
+                    <DataGrid SelectionMode="Single" IsReadOnly="True" ColumnWidth="*" x:Name="appGrid" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="277" Margin="18,10,0,0" VerticalAlignment="Top" Width="849" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+                    <Button x:Name="scheduleBtn" Content ="Schedule" Grid.Column="2" HorizontalAlignment="Left" Height="40" Margin="254,313,0,0" VerticalAlignment="Top" Width="100" Background="#FF1DE4BB" FontWeight="Bold" Click="scheduleBtn_Click"/>
+                    <Button x:Name="cancelAppointmentBtn" Content ="Cancel"  Grid.Column="2" HorizontalAlignment="Left" Height="40" Margin="467,313,0,0" VerticalAlignment="Top" Width="81" Background="#FF7D50FF" FontWeight="Bold" Click="cancelAppointmentBtn_Click"/>
+                    <Button x:Name="startExamination" Grid.Column="1" Content="Examine" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="40" Margin="259,313,0,0" VerticalAlignment="Top" Width="116" FontWeight="Bold" Background="#FFFF2859" Click="startExamination_Click"/>
+
+
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Patients" FontSize="18">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid SelectionChanged="PatientsGrid_OnSelectionChanged" SelectionMode="Single" IsReadOnly="True" ColumnWidth="*" x:Name="patientsGrid" HorizontalAlignment="Left" Height="296" Margin="18,10,0,0" VerticalAlignment="Top" Width="849"/>
+                    <TextBox x:Name="patientSearch" HorizontalAlignment="Left" TextChanged="patientSearch_OnTextChanged" Height="30" Margin="184,332,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="324" FontSize="17"/>
+                    <Label Content="Search patients: " HorizontalAlignment="Left" Margin="18,330,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+                    <Button Click="mcPatientTable_OnClick" x:Name="mcPatientTable" Content="Medical card" HorizontalAlignment="Left" Height="38" Margin="712,324,0,0" VerticalAlignment="Top" Width="155" FontWeight="Bold" Background="#FFFFF08C" Visibility="Hidden"/>
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+
+    </Grid>
+</Window>

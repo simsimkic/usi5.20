@@ -1,0 +1,157 @@
+[
+  {
+    "MedicalCard": {
+      "Height": 175.0,
+      "Weight": 76.0,
+      "MedicalHistory": [
+        {
+          "DiagnosisName": "Diabetes",
+          "DiagnosisDate": "2020-10-12T00:00:00"
+        },
+        {
+          "DiagnosisName": "High blood pressure",
+          "DiagnosisDate": "2018-05-10T00:00:00"
+        },
+        {
+          "DiagnosisName": "Broken arm",
+          "DiagnosisDate": "2023-04-12T00:00:00"
+        },
+        {
+          "DiagnosisName": "Heart attack",
+          "DiagnosisDate": "2023-05-11T00:00:00"
+        }
+      ]
+    },
+    "Jmbg": "111111113",
+    "Name": "Petar",
+    "LastName": "Maras",
+    "Password": "123",
+    "BirthDate": "2000-09-09T00:00:00"
+  },
+  {
+    "MedicalCard": {
+      "Height": 187.1,
+      "Weight": 77.7,
+      "MedicalHistory": [
+        {
+          "DiagnosisName": "Asthma",
+          "DiagnosisDate": "2021-09-12T00:00:00"
+        },
+        {
+          "DiagnosisName": "Lung cancer",
+          "DiagnosisDate": "2022-05-10T00:00:00"
+        }
+      ]
+    },
+    "Jmbg": "222222223",
+    "Name": "Nemanja",
+    "LastName": "Cabrajac",
+    "Password": "123",
+    "BirthDate": "2010-01-01T00:00:00"
+  },
+  {
+    "MedicalCard": {
+      "Height": 170.0,
+      "Weight": 72.0,
+      "MedicalHistory": [
+        {
+          "DiagnosisName": "Diabetes",
+          "DiagnosisDate": "2020-10-12T00:00:00"
+        },
+        {
+          "DiagnosisName": "High blood pressure",
+          "DiagnosisDate": "2018-05-10T00:00:00"
+        }
+      ]
+    },
+    "Jmbg": "123456789",
+    "Name": "John",
+    "LastName": "Doe",
+    "Password": "123",
+    "BirthDate": "2000-09-09T10:00:00"
+  },
+  {
+    "MedicalCard": {
+      "Height": 187.1,
+      "Weight": 77.5,
+      "MedicalHistory": [
+        {
+          "DiagnosisName": "Asthma",
+          "DiagnosisDate": "2021-09-12T00:00:00"
+        },
+        {
+          "DiagnosisName": "Lung cancer",
+          "DiagnosisDate": "2022-05-10T00:00:00"
+        }
+      ]
+    },
+    "Jmbg": "696964321",
+    "Name": "Annie",
+    "LastName": "Doe",
+    "Password": "123",
+    "BirthDate": "2010-01-01T10:10:10"
+  },
+  {
+    "MedicalCard": {
+      "Height": 175.0,
+      "Weight": 87.0,
+      "MedicalHistory": [
+        {
+          "DiagnosisName": "Migraine",
+          "DiagnosisDate": "2019-01-15T00:00:00"
+        },
+        {
+          "DiagnosisName": "Depression",
+          "DiagnosisDate": "2022-02-20T00:00:00"
+        }
+      ]
+    },
+    "Jmbg": "555444333",
+    "Name": "Peter",
+    "LastName": "Parker",
+    "Password": "abc",
+    "BirthDate": "1995-05-05T15:30:00"
+  },
+  {
+    "MedicalCard": {
+      "Height": 180.3,
+      "Weight": 85.3,
+      "MedicalHistory": [
+        {
+          "DiagnosisName": "Heart attack",
+          "DiagnosisDate": "2021-02-01T00:00:00"
+        },
+        {
+          "DiagnosisName": "Cholesterol",
+          "DiagnosisDate": "2019-11-22T00:00:00"
+        },
+        {
+          "DiagnosisName": "Diabetes",
+          "DiagnosisDate": "2023-05-12T00:00:00"
+        }
+      ]
+    },
+    "Jmbg": "333222111",
+    "Name": "Mary",
+    "LastName": "Smith",
+    "Password": "def",
+    "BirthDate": "1980-12-31T23:59:59"
+  },
+  {
+    "MedicalCard": {
+      "Height": 75.0,
+      "Weight": 180.0,
+      "MedicalHistory": [
+        {
+          "DiagnosisName": "Sickness",
+          "DiagnosisDate": "2023-05-09T00:00:00"
+        }
+      ]
+    },
+    "Jmbg": "133222333",
+    "Name": "John",
+    "LastName": "Parker",
+    "Password": "qwe",
+    "BirthDate": "2002-09-24T00:00:00"
+  }
+]

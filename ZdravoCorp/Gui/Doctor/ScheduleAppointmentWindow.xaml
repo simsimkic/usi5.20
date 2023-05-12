@@ -1,0 +1,67 @@
+﻿<Window x:Name="editWindow" x:Class="ZdravoCorp.Gui.Doctor.ScheduleAppointmentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoCorp.Gui.Doctor"
+        mc:Ignorable="d"
+         Height="430
+        " Width="400
+        ">
+    <Grid>
+        <Label Content="Patient JMBG" HorizontalAlignment="Left" Height="35" Margin="33,52,0,0" VerticalAlignment="Top" Width="117" FontSize="14" FontWeight="Bold"/>
+        <ComboBox x:Name="appointmentTypeBox" SelectionChanged="appointmentTypeBox_SelectionChanged" HorizontalAlignment="Left" Height="29" Margin="185,99,0,0" VerticalAlignment="Top" Width="175" BorderBrush="HotPink" FontSize="17"
+/>
+        <DatePicker x:Name="appDate" HorizontalAlignment="Left" Height="29" Margin="185,152,0,0" VerticalAlignment="Top" Width="175" FontSize="17">
+            <DatePicker.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
+                    <GradientStop Color="#FFA3AEB9"/>
+                    <GradientStop Color="#FF8399A9" Offset="0.375"/>
+                    <GradientStop Color="#FF718597" Offset="0.375"/>
+                    <GradientStop Color="#FFEC9FC5" Offset="1"/>
+                </LinearGradientBrush>
+            </DatePicker.BorderBrush>
+        </DatePicker>
+        <Label Content="Appointment type
+                           " HorizontalAlignment="Left" Height="35" Margin="33,95,0,0" VerticalAlignment="Top" Width="150" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Appointment date" HorizontalAlignment="Left" Height="35" Margin="33,148,0,0" VerticalAlignment="Top" Width="150" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="scheduleAppBtn" Content=" Schedule appointment" Click="scheduleAppBtn_Click" HorizontalAlignment="Left" Height="41" Margin="104,322,0,0" VerticalAlignment="Top" Width="176" FontSize="15" FontWeight="Bold" Background="White" BorderBrush="#FFEC9FC5"/>
+        <ComboBox x:Name="appointmentTime" HorizontalAlignment="Left" Height="29" Margin="185,202,0,0" VerticalAlignment="Top" Width="175" IsEditable="True" Text="" BorderBrush="#FFEC9FC5" FontSize="17"
+>
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="#FFEC9FC5" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ComboBoxItem Content="08:00"/>
+            <ComboBoxItem Content="09:00"/>
+            <ComboBoxItem Content="10:00"/>
+            <ComboBoxItem Content="11:00"/>
+            <ComboBoxItem Content="12:00"/>
+            <ComboBoxItem Content="13:00"/>
+            <ComboBoxItem Content="14:00"/>
+            <ComboBoxItem Content="15:00"/>
+            <ComboBoxItem Content="16:00"/>
+            <ComboBoxItem Content="17:00"/>
+        </ComboBox>
+        <Label Content="Appointment time" HorizontalAlignment="Left" Height="35" Margin="33,201,0,0" VerticalAlignment="Top" Width="150" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="durationBox" HorizontalAlignment="Left" Height="32" Margin="185,258,0,0" TextWrapping="Wrap" Text="15" VerticalAlignment="Top" Width="175" IsEnabled="False" BorderBrush="#FFEC9FC5" FontSize="17" RenderTransformOrigin="0.508,0.615"/>
+        <Label Content="Duration (min)" HorizontalAlignment="Left" Height="35" Margin="33,257,0,0" VerticalAlignment="Top" Width="150" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="editAppointmentBtn" Visibility="Hidden" Click="EditAppointmentBtn_Click"  Content=" Edit appointment"  HorizontalAlignment="Left" Height="40" Margin="53,429,0,0" VerticalAlignment="Top" Width="147" FontSize="15" FontWeight="Bold" Background="White" BorderBrush="#FFEC9FC5"/>
+        <Button x:Name="cancelEditBtn"   Visibility="Hidden" Click="cancelEditBtn_Click"  Content="Cancel" HorizontalAlignment="Left" Height="41" Margin="230,429,0,0" VerticalAlignment="Top" Width="84" FontSize="15" FontWeight="Bold" Background="White" BorderBrush="#FFEC9FC5"/>
+        <TextBox x:Name="appointmentId" IsEnabled="False" FontSize="17" Visibility="Hidden" HorizontalAlignment="Left" Height="28" Margin="185,314,0,0" TextWrapping="Wrap" Text="15" VerticalAlignment="Top" Width="175"/>
+        <Label x:Name="appIdLabel" Content="ID (1-100000)" Visibility="Hidden" HorizontalAlignment="Left" Margin="33,313,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <ComboBox x:Name="appointmentStatus" FontSize="17" Visibility="Hidden" HorizontalAlignment="Left" Height="28" Margin="185,368,0,0" VerticalAlignment="Top" Width="175"/>
+        <Label x:Name="appStatusLabel" Visibility="Hidden" Content="Appointment status" HorizontalAlignment="Left" Margin="33,367,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <ComboBox x:Name="patientJmbg" HorizontalAlignment="Left" Height="29" Margin="185,52,0,0" VerticalAlignment="Top" Width="175" Text="" BorderBrush="#FFEC9FC5" FontSize="17"
+>
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="#FFEC9FC5" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+    </Grid>
+</Window>

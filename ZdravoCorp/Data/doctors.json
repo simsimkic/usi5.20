@@ -1,0 +1,26 @@
+[
+  {
+    "BirthDate": "1980-05-25T00:00:00",
+    "Jmbg": "987654321",
+    "LastName": "Doe",
+    "Name": "Jane",
+    "Password": "123",
+    "Specialization": 1
+  },
+  {
+    "Specialization": 0,
+    "Jmbg": "111222333",
+    "Name": "Bob",
+    "LastName": "Smith",
+    "Password": "123",
+    "BirthDate": "1975-12-01T00:00:00"
+  },
+  {
+    "Specialization": 3,
+    "Jmbg": "444555666",
+    "Name": "Alice",
+    "LastName": "Johnson",
+    "Password": "123",
+    "BirthDate": "1990-08-15T00:00:00"
+  }
+]

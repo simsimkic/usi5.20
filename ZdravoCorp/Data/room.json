@@ -1,0 +1,50 @@
+﻿[
+  {
+    "Room Id": "01",
+    "Room Type": "OperationRoom"
+  },
+  {
+    "Room Id": "02",
+    "Room Type": "OperationRoom"
+  },
+  {
+    "Room Id": "03",
+    "Room Type": "ExaminationRoom"
+  },
+  {
+    "Room Id": "04",
+    "Room Type": "ExaminationRoom"
+  },
+  {
+    "Room Id": "05",
+    "Room Type": "ExaminationRoom"
+  },
+  {
+    "Room Id": "06",
+    "Room Type": "ExaminationRoom"
+  },
+  {
+    "Room Id": "07",
+    "Room Type": "PatientRoom"
+  },
+  {
+    "Room Id": "08",
+    "Room Type": "PatientRoom"
+  },
+  {
+    "Room Id": "09",
+    "Room Type": "PatientRoom"
+  },
+  {
+    "Room Id": "10",
+    "Room Type": "PatientRoom"
+  },
+  {
+    "Room Id": "11",
+    "Room Type": "WaitingRoom"
+  },
+  {
+    "Room Id": "00",
+    "Room Type": "Storage"
+  }
+]

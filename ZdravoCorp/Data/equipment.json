@@ -1,0 +1,44 @@
+[
+  {
+    "Equipment Id": "0001",
+    "Equipment Name": "Sto",
+    "Equipment Type": 2,
+    "Equipment Dynamic": false
+  },
+  {
+    "Equipment Id": "0002",
+    "Equipment Name": "Ormar",
+    "Equipment Type": 2,
+    "Equipment Dynamic": false
+  },
+  {
+    "Equipment Id": "0003",
+    "Equipment Name": "Stolica",
+    "Equipment Type": 2,
+    "Equipment Dynamic": false
+  },
+  {
+    "Equipment Id": "0004",
+    "Equipment Name": "Cream",
+    "Equipment Type": 0,
+    "Equipment Dynamic": true
+  },
+  {
+    "Equipment Id": "0005",
+    "Equipment Name": "Vakcine",
+    "Equipment Type": 3,
+    "Equipment Dynamic": true
+  },
+  {
+    "Equipment Id": "0006",
+    "Equipment Name": "Pen",
+    "Equipment Type": 1,
+    "Equipment Dynamic": true
+  },
+  {
+    "Equipment Id": "0007",
+    "Equipment Name": "Gloves",
+    "Equipment Type": 1,
+    "Equipment Dynamic": true
+  }
+]

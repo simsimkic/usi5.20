@@ -1,0 +1,38 @@
+[
+  {
+    "jmbg": "777456789",
+    "name": "Anna",
+    "lastName": "Smith",
+    "password": "password",
+    "birthDate": "1981-01-01T00:00:00"
+  },
+  {
+    "jmbg": "234555890",
+    "name": "John",
+    "lastName": "Doe",
+    "password": "password",
+    "birthDate": "1982-02-02T00:00:00"
+  },
+  {
+    "jmbg": "123699666",
+    "name": "Emily",
+    "lastName": "Jones",
+    "password": "password",
+    "birthDate": "1983-03-03T00:00:00"
+  },
+  {
+    "jmbg": "456789012",
+    "name": "David",
+    "lastName": "Wilson",
+    "password": "password",
+    "birthDate": "1984-04-04T00:00:00"
+  },
+  {
+    "jmbg": "567220123",
+    "name": "Sarah",
+    "lastName": "Davis",
+    "password": "password",
+    "birthDate": "1985-05-05T00:00:00"
+  }
+]
+

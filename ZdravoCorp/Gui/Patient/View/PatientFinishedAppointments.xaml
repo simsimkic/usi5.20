@@ -1,0 +1,23 @@
+﻿<Window x:Class="ZdravoCorp.Gui.Patient.View.PatientFinishedAppointments"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoCorp.Gui.Patient.View"
+        mc:Ignorable="d"
+        Title="PatientFinishedAppointments" Height="450" Width="800">
+    <Grid Background="#FFE5E5E5">
+        <Label Content="Patient appointments" HorizontalAlignment="Left" Height="35" Margin="32,21,0,0" VerticalAlignment="Top" Width="227" FontWeight="Bold" FontSize="16"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="233" Margin="32,74,0,0" VerticalAlignment="Top" Width="417" d:ItemsSource="{d:SampleData ItemCount=5}" FontSize="18"/>
+        <Button Content="Appointment anamnesis" HorizontalAlignment="Left" Height="43" Margin="506,92,0,0" VerticalAlignment="Top" Width="158" FontWeight="Bold" Background="#FF0EFFB7" Click="Appointment_Anamnesis_Click"/>
+        <Label Content="Sort by:" HorizontalAlignment="Left" Height="33" Margin="32,328,0,0" VerticalAlignment="Top" Width="99" FontWeight="Bold" FontSize="16"/>
+        <Button Content="Date" HorizontalAlignment="Left" Height="42" Margin="136,328,0,0" VerticalAlignment="Top" Width="123" FontWeight="Bold" FontSize="16" Click="Sort_By_Date_Click"/>
+        <Button Content="Doctor JMBG" HorizontalAlignment="Left" Height="42" Margin="315,328,0,0" VerticalAlignment="Top" Width="122" FontWeight="Bold" FontSize="16" Click="Sort_By_Doctor_Jmbg_Click"/>
+        <Button Content="Doctor specialty" HorizontalAlignment="Left" Height="42" Margin="506,328,0,0" VerticalAlignment="Top" Width="153" FontWeight="Bold" FontSize="16" Click="Sort_By_Doctor_Specialty_Click"/>
+        <Label Content="Search anamnesis:" HorizontalAlignment="Left" Height="36" Margin="506,168,0,0" VerticalAlignment="Top" Width="153" FontWeight="Bold" FontSize="16"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="29" Margin="506,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="158" FontSize="16"/>
+        <Button Content="Search" HorizontalAlignment="Left" Height="29" Margin="691,217,0,0" VerticalAlignment="Top" Width="82" FontWeight="Bold" FontSize="16" Background="#FF10FBF6" Click="Search_Anamnesis_Click"/>
+        <Button Content="Go back to all appointments" HorizontalAlignment="Left" Height="33" Margin="506,259,0,0" VerticalAlignment="Top" Width="226" Background="#FF46ED18" FontWeight="Bold" FontSize="16" Click="Go_Back_Click"/>
+
+    </Grid>
+</Window>
